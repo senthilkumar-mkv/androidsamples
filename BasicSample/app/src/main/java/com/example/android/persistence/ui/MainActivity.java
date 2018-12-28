@@ -49,4 +49,14 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.fragment_container,
                         productFragment, null).commit();
     }
-}
+
+    public void showtest(Product product) {
+
+        ProductFragment productFragment = ProductFragment.forProduct(product.getId());
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .addToBackStack("product")
+                .replace(R.id.fragment_container,
+
+    }
